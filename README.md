@@ -20,7 +20,8 @@ The model was trained and evaluated locally under strict hardware compute constr
 ### Visual Reconstruction
 *(The progression below shows the cloudy optical input, the guiding SAR data, the AI-generated reconstruction, and the actual ground truth.)*
 
-![ClearSightSAR Cloud Removal Results](Figure_1.jpg)
+
+<img width="1539" height="500" alt="Figure_1" src="https://github.com/user-attachments/assets/91ec02ae-2ffb-462e-b291-ead7b2c006e1" />
 
 ## 🛠️ Tech Stack
 * **Deep Learning Frameworks:** PyTorch, HuggingFace Diffusers
