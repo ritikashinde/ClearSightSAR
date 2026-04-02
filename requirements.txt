@@ -1,0 +1,9 @@
+torch
+torchvision
+diffusers
+tqdm
+pyyaml
+datasets
+Pillow
+lpips
+confluent-kafka

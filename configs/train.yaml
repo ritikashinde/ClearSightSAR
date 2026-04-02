@@ -1,0 +1,12 @@
+# Training Hyperparameters
+SSL_PRETRAIN:
+  epochs: 10
+  learning_rate: 0.0001
+  batch_size: 16
+  temp_nce: 0.07         # Temperature for InfoNCE Loss
+
+DIFFUSION_TRAIN:
+  epochs: 10  # Reduced from 50 for faster testing
+  learning_rate: 0.00005 # Lower LR for stability in diffusion
+  batch_size: 8
+  lambda_perceptual: 0.0001 # Weight for Novelty 3: Perceptual Loss
