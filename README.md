@@ -2,15 +2,11 @@
 
 An implementation of a Latent Diffusion Model (LDM) designed to reconstruct cloud-free optical satellite imagery by conditioning on Synthetic Aperture Radar (SAR) data.
 
-SAR Image + Cloudy Optical Image
-
-                ↓
-                
-        Diffusion Model
-        
-                ↓
-                
-      Clean Optical Output
+```mermaid
+graph TD
+    A[SAR Image + Cloudy Optical Image] --> B[Diffusion Model]
+    B --> C[Clean Optical Output]
+```
 
 ##  Project Overview
 Optical satellite imagery is frequently obstructed by thick cloud cover, rendering it useless for critical geospatial analysis. This project tackles that limitation by utilizing a conditional diffusion architecture. By pairing cloudy optical images with cloud-penetrating SAR data, the model learns the underlying geographical structures and successfully "inpaints" the missing landscape in the optical domain.
