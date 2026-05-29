@@ -1,16 +1,21 @@
-# ☁️ ClearSightSAR: SAR-Guided Latent Diffusion for Cloud Removal
+# ClearSightSAR: SAR-Guided Latent Diffusion for Cloud Removal
 
 An implementation of a Latent Diffusion Model (LDM) designed to reconstruct cloud-free optical satellite imagery by conditioning on Synthetic Aperture Radar (SAR) data.
+SAR Image + Cloudy Optical Image
+                ↓
+        Diffusion Model
+                ↓
+      Clean Optical Output
 
-## 🚀 Project Overview
+##  Project Overview
 Optical satellite imagery is frequently obstructed by thick cloud cover, rendering it useless for critical geospatial analysis. This project tackles that limitation by utilizing a conditional diffusion architecture. By pairing cloudy optical images with cloud-penetrating SAR data, the model learns the underlying geographical structures and successfully "inpaints" the missing landscape in the optical domain.
 
-## 🧠 Architecture
+##  Architecture
 * **Variational Autoencoder (VAE):** A custom CNN-based autoencoder trained to compress 256x256 high-resolution satellite patches into dense 32x32 latent representations, drastically reducing compute requirements and enabling local GPU training.
 * **Conditional UNet:** The core diffusion model that denoises the latents. It is explicitly conditioned on a concatenated tensor of both the cloudy optical latent and the SAR structural latent.
 * **Denoising Scheduler:** Utilizes a DDPM scheduler for the reverse diffusion (inference) process.
 
-## 📊 Results & Metrics
+##  Results & Metrics
 The model was trained and evaluated locally under strict hardware compute constraints, successfully establishing a baseline for the architecture's viability.
 
 * **PSNR:** 16.0812
@@ -23,12 +28,12 @@ The model was trained and evaluated locally under strict hardware compute constr
 
 <img width="1539" height="500" alt="Figure_1" src="https://github.com/user-attachments/assets/91ec02ae-2ffb-462e-b291-ead7b2c006e1" />
 
-## 🛠️ Tech Stack
+##  Tech Stack
 * **Deep Learning Frameworks:** PyTorch, HuggingFace Diffusers
 * **Computer Vision:** OpenCV, LPIPS Perceptual Loss
 * **Data Processing:** NumPy, Matplotlib
 
-## ⚙️ Local Setup
+##  Local Setup
 ```bash
 # Clone the repository
 git clone [https://github.com/ritikashinde/ClearSightSAR.git](https://github.com/ritikashinde/ClearSightSAR.git)
