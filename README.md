@@ -1,10 +1,15 @@
 # ClearSightSAR: SAR-Guided Latent Diffusion for Cloud Removal
 
 An implementation of a Latent Diffusion Model (LDM) designed to reconstruct cloud-free optical satellite imagery by conditioning on Synthetic Aperture Radar (SAR) data.
+
 SAR Image + Cloudy Optical Image
+
                 ↓
+                
         Diffusion Model
+        
                 ↓
+                
       Clean Optical Output
 
 ##  Project Overview
