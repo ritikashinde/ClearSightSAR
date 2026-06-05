@@ -17,7 +17,7 @@ Optical satellite imagery is frequently obstructed by thick cloud cover, renderi
 * **Denoising Scheduler:** Utilizes a DDPM scheduler for the reverse diffusion (inference) process.
 
 ##  Results & Metrics
-The model was trained and evaluated locally under strict hardware compute constraints, successfully establishing a baseline for the architecture's viability.
+The model was trained and evaluated locally under strict hardware compute constraints, demonstrating the feasibility of the proposed pipeline while revealing important limitations in structural fidelity and land-cover reconstruction.
 
 * **PSNR:** 16.0812
 * **SSIM:** 0.2431
