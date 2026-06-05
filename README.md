@@ -34,10 +34,18 @@ The model was trained and evaluated locally under strict hardware compute constr
 * **Computer Vision:** OpenCV, LPIPS Perceptual Loss
 * **Data Processing:** NumPy, Matplotlib
 
+## Limitations & Future Work
+Limited training data and compute resources constrained model performance.
+Generated outputs occasionally exhibit land-cover hallucination and color bias.
+Stronger SAR conditioning at multiple UNet scales may improve structural consistency.
+Future work includes larger datasets, improved conditioning strategies, and higher-capacity diffusion backbones.
+
 ##  Local Setup
 ```bash
 # Clone the repository
 git clone [https://github.com/ritikashinde/ClearSightSAR.git](https://github.com/ritikashinde/ClearSightSAR.git)
+
+
 
 # Install dependencies
 pip install -r requirements.txt
